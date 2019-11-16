@@ -1,15 +1,16 @@
 .container {
     background-color: #c00025;
     width: 100%;
-    max-width: 550px;
+    max-width: 300px;
     border-radius: 15px;
     border: 2px solid grey;
     padding-bottom: 25px;
+    padding: 20px;
 }
 .display {
     margin-top: 25px;
     height: 100px;
-    width: 450px;
+    width: 280px;
     border-radius: 50px;
     color: white;
     background-color: #322c2d;
@@ -17,6 +18,68 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    padding-right: 8%;
     font-size: 5.0rem;
-  }
+    padding-right:  20px;
+}
+
+.buttons{
+    display: flex;
+    margin-top: 20px
+}
+
+.leftside {
+    width: 75%;
+}
+
+.leftside > div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 6%;
+    margin: 2%;
+}
+
+.leftside > div > * {
+    background-color: #2061b0;
+    border-color: #2061b0;
+    margin: 0 15px;
+}
+.leftside > div:nth-child(2) > * {
+    justify-content: space-evenly;
+    background-color: #123c78;
+    border-color: #123c78;
+}
+
+.tenth{
+    width: 125px;
+    border-radius: 20px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.rightside{
+    width: 15%;
+    margin-left:25px;
+}
+
+.rightside > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rightside > div > *{
+    border-color: #2061b0;
+    background-color: #2061b0;
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    margin: 5px 0;
+    border-radius: 50%;
+    color: white;
+    box-shadow: 1px 2px black;
+}
+
