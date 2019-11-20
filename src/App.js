@@ -80,7 +80,6 @@ function App() {
       console.log(event.target.value);
     }
   }
-
   function doSpecialStates(event){
     switch(event.target.value){
       case '%':
